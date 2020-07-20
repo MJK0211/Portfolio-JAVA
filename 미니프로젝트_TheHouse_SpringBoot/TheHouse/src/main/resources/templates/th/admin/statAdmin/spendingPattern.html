@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="th/layout/adminLayout">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>소비패턴</title>
+    <th:block layout:fragment="css">
+    </th:block>
+</head>
+<body>
+
+<div layout:fragment="content">
+<div class="container">
+    <div id="name" >
+        Total 유저별 구매금액
+
+        <br>
+
+        <h1>
+            <a href="">연간</a>
+        </h1>날짜 : <input id="dateCalendar" type='date'/> - <input id="dateCalendar2" type='date'/><button onclick="getDate()">클릭</button>
+        <div  class="spendingPatternDiv" id="hoho" style="width: 50%; height: 300px" >
+        <canvas class="spendingPatternGraph" id="myChart" style="height: 100%; width: 100%"; float="left" ></canvas>
+        </div>
+        <div id="field">
+        </div>
+
+        <script th:inline="javascript">
+            var jsonData;
+            var chart1Data;
+            var options;
+
+            var oldGraph;
+            drawGraph();
+            drawCanvas();
+            function getDate() {
+                var date1 = document.getElementById('dateCalendar').value;
+                var date2 = document.getElementById('dateCalendar2').value;
+                if(date1 == '' || date2 == ''){
+                    alert("날짜입력하세요");
+                    return;
+                }
+                var now = new Date();
+                year = now.getFullYear()
+                month = now.getMonth()+1;
+                if((month+"").length <2){
+                    month = "0"+month;
+                }
+                date = now.getDate();
+                if((date+"").length <2){
+                    date = "0" +date;
+                }
+                var today = year + "" + month + "" + date;
+                var dateSplit1 = date1.split("-");
+                var year1 = dateSplit1[0];
+                var month1 = dateSplit1[1];
+                var day1 = dateSplit1[2];
+
+                var dateSplit2 = date2.split("-");
+                var year2 = dateSplit2[0];
+                var month2 = dateSplit2[1];
+                var day2 = dateSplit2[2];
+
+                var a = year1+month1+day1;
+                var b = year2+month2+day2;
+                var a1 = year1+'-'+month1+'-'+day1;
+                var b1 = year2+'-'+month2+'-'+day2;
+                var dateform = {
+
+                    date1 : date1,
+                    date2 : date2
+
+                }
+                if(a>b || a>today){
+                    alert("안됩니다");
+                }else{
+                    $.ajax({
+                        url: "userDateStat",
+                        type : "POST",
+                        data : dateform,
+                        success : function(data){
+                            jsonData = data
+
+                            oldGraph.destroy;
+                            reloadFunc();
+                            drawGraph();
+                            drawCanvas();
+
+                        },
+                        error: function () {
+                            alert("err");
+
+                        }
+                    });
+
+                }
+
+
+
+            }
+
+            function reloadFunc(){
+
+                var div = document.getElementById('hoho').innerHTML;
+                $('.spendingPatternGraph').remove();
+                var canv = document.createElement('canvas');
+                canv.id = 'myChart';
+                canv.style='height: 100%; width: 100%';
+                document.getElementById('hoho').appendChild(canv);
+
+            }
+            function drawGraph(){
+                var json = [[${jsonText}]];
+                var jsonParse;
+                if(jsonData == null){
+                    jsonParse = JSON.parse(json);
+                }else {
+                    jsonParse = JSON.parse(jsonData);
+                }
+                var chart1Arr = new Array();
+                var labelElement = new Array();
+                var yearArr = new Array();
+                var yearArr2 = new Array();
+                var productNo = new Array();
+                for (var i = 0; i < jsonParse.length; i++) {
+                    labelElement[i] = jsonParse[i].memberId;
+                    chart1Arr[i] = jsonParse[i].totalPrice;
+
+
+                }
+                var backC = [
+                    'rgba(124, 192, 135, 1)',
+                    'rgba(154, 62, 235, 1)',
+                    'rgba(154, 62, 35, 1)',
+                    'blue',
+                    'purple',
+                    'yellow',
+                    'green',
+                    'black',
+                    'white',
+                    'red',
+                ];
+                var borderC = [
+                    'rgba(124, 192, 135, 1)',
+                    'rgba(154, 62, 235, 1)',
+                    'rgba(154, 62, 35, 1)',
+                    'blue',
+                    'purple',
+                    'yellow',
+                    'green',
+                    'black',
+                    'white',
+                    'red',
+                ];
+                options = {
+                    maintainAspectRatio: true, // default value. false일 경우 포함된 div의 크기에 맞춰서 그려짐.
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                };
+
+                // 차트 data
+                chart1Data = {
+                    labels: labelElement,
+                    datasets: [{
+                        label: '구매금액',
+                        data: chart1Arr, // 판매량 1, 품목, 날짜 ==== 0507날짜의 판매량 1위~6위 품목
+                        backgroundColor: backC,
+                        borderColor: borderC,
+                        borderWidth: 1
+                    }]
+                };
+                drawCanvas();
+            }
+
+
+
+            function drawCanvas() {
+
+
+
+                var chart1Canvas = document.getElementById("myChart");
+                var ctx = chart1Canvas.getContext('2d');
+                var myNewChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: chart1Data,
+                    options: options
+                });
+                oldGraph = myNewChart;
+            }
+
+
+        </script>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

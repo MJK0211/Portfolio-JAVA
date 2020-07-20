@@ -1,0 +1,798 @@
+2020-07-06 12:14:33.686  INFO 12796 --- [restartedMain] com.bit.house.HouseApplication           : Starting HouseApplication on DESKTOP-FNC03QL with PID 12796 (D:\injImportFolder\thehouse\build\classes\java\main started by bitcamp in D:\injImportFolder\thehouse)
+2020-07-06 12:14:33.690  INFO 12796 --- [restartedMain] com.bit.house.HouseApplication           : The following profiles are active: local
+2020-07-06 12:14:34.034  INFO 12796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 12:14:34.034  INFO 12796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-06 12:14:34.048  INFO 12796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-07-06 12:14:34.302  INFO 12796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 12:14:34.303  INFO 12796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 12:14:34.303  INFO 12796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-06 12:14:34.309  INFO 12796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 12:14:34.309  INFO 12796 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 617 ms
+2020-07-06 12:14:34.481  INFO 12796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-07-06 12:14:34.482  INFO 12796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/img/**'], []
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-07-06 12:14:34.645  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/plugins/**'], []
+2020-07-06 12:14:34.659  INFO 12796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45be3c4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ab4433d, org.springframework.security.web.header.HeaderWriterFilter@23fc0b9f, org.springframework.web.filter.CharacterEncodingFilter@8223897, org.springframework.security.web.authentication.logout.LogoutFilter@66bf7c73, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@fb85d22, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@53b8d434, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e48dbf1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30f0b276, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7393f704, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d2e54d3, org.springframework.security.web.session.SessionManagementFilter@5f9250da, org.springframework.security.web.access.ExceptionTranslationFilter@24908fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ae62166]
+2020-07-06 12:14:34.704  INFO 12796 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-07-06 12:14:34.708  INFO 12796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2020-07-06 12:14:34.795  INFO 12796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 12:14:34.807  INFO 12796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 12:14:34.807  INFO 12796 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2020-07-06 12:14:34.807  INFO 12796 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-07-06 12:14:34.808  INFO 12796 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2020-07-06 12:14:34.811  INFO 12796 --- [restartedMain] com.bit.house.HouseApplication           : Started HouseApplication in 1.185 seconds (JVM running for 13.323)
+2020-07-06 12:14:34.813  INFO 12796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 12:14:34.818  INFO 12796 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 12:14:34.818  INFO 12796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 12:14:34.821  INFO 12796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-07-06 12:14:36.369  WARN 12796 --- [http-nio-8080-exec-2] c.b.h.security.CustomUserDetailsService  : Load User By UserName : ha123
+2020-07-06 12:14:36.374 ERROR 12796 --- [http-nio-8080-exec-2] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160) [spring-security-oauth2-client-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy115.read(Unknown Source) ~[na:na]
+	at com.bit.house.security.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:35) ~[main/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	... 51 common frames omitted
+
+2020-07-06 12:14:38.802  WARN 12796 --- [http-nio-8080-exec-3] c.b.h.security.CustomUserDetailsService  : Load User By UserName : ha123
+2020-07-06 12:14:38.805 ERROR 12796 --- [http-nio-8080-exec-3] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160) [spring-security-oauth2-client-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy115.read(Unknown Source) ~[na:na]
+	at com.bit.house.security.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:35) ~[main/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	... 51 common frames omitted
+
+2020-07-06 12:14:40.394  INFO 12796 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-07-06 12:14:40.399  INFO 12796 --- [http-nio-8080-exec-8] jdbc.connection                          : 11. Connection opened
+2020-07-06 12:14:40.399  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.new Connection returned 
+2020-07-06 12:14:40.400  INFO 12796 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+2020-07-06 12:14:40.400  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.400  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.isValid(1) returned true
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getTransactionIsolation() returned 4
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.new PreparedStatement returned 
+2020-07-06 12:14:40.401  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.prepareStatement(select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@36e63356
+2020-07-06 12:14:40.402  INFO 12796 --- [http-nio-8080-exec-8] jdbc.sqlonly                             : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+
+2020-07-06 12:14:40.402  INFO 12796 --- [http-nio-8080-exec-8] jdbc.sqltiming                           : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+ {executed in 0 msec}
+2020-07-06 12:14:40.402  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.execute() returned true
+2020-07-06 12:14:40.402  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.new ResultSet returned 
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@73e4abee
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@3df502dc - Field level information: 
+	com.mysql.cj.result.Field@425ddbbe[dbName=thehouse,tableName=product,originalTableName=product,columnName=productNo,originalColumnName=productNo,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@45a62c20[dbName=thehouse,tableName=product,originalTableName=product,columnName=sellerName,originalColumnName=sellerName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@13cb54a1[dbName=thehouse,tableName=product,originalTableName=product,columnName=productName,originalColumnName=productName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@6bd57e6[dbName=thehouse,tableName=product,originalTableName=product,columnName=customerPrice,originalColumnName=customerPrice,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@2a91eca4[dbName=thehouse,tableName=product,originalTableName=product,columnName=productMainImg,originalColumnName=productMainImg,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getType() returned 1003
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned FLOSTOOL-100100001
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 플로바움
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 인조가죽 보조스툴 2color
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 69000
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/FLOS1.jpg
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.403  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned CHANGLIVBOX-200200001
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 창신리빙
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 내츄럴 서랍형 리빙박스 투명수납함
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 8910
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/changlivbox1.jpg
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned GAZZSHOEWOOD-200300001
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 가쯔
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 원목 실내화걸이 신발정리대 & 슬리퍼 1+1 2colors
+2020-07-06 12:14:40.404  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 17010
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/gazzshoewood1.jpg
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned ROOMNHOMETROL3-200100002
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 룸앤홈
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 패트릭3단 트롤리 3colors
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 44910
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/roomnhometrol31.jpg
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned FREEMADEDINNINGCH-100300002
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 프리메이드
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.405  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 프리메이드 식탁의자
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 50000
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/freemade_diningch_1.jpg
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned MARKETBBEKJETROL-200100002
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 마켓비
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned BEKJE 원목트롤리 자작나무
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 92000
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/marketbbekjetrol1.jpg
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned MARKETBMALGOSHOE-200300001
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 마켓비
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned MALGO 신발장/선반 600 2단
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 15480
+2020-07-06 12:14:40.406  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/marketbmalgoshoe1.jpg
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned MARKETBKONTINOLIVBOX-200200001
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 마켓비
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned KONTINO 폴딩박스 68L 2colors
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 29070
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/marketbkontinolivbox1.jpg
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned HOUSEBUDYBIGLIVBOX-200200001
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 하우스버디
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 슬라이딩 박스 3P 대형
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 25110
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/housebudybiglivbox1.jpg
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.407  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned DESTRASOFA-100100001
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 레이디가구
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 데스트라 천연면피 소가죽 소파 3인/4인용
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 489000
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.408  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/DESTRA1.jpg
+2020-07-06 12:14:40.409  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.409  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.409  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned SIMABLE-100100004
+2020-07-06 12:14:40.409  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 상일리베가구
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 마블대리석/진주석 소파테이블 11types
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 177000
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/SIMABLE1.jpg
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned PPOOAASS2-300100002
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 필립스
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 소프트팔 디즈니 미키마우스 무드등 취침등 USB
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 19800
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/PPOOAASS2.jpg
+2020-07-06 12:14:40.410  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:40.411  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultsettable                      : 
+|-------------------------------|-----------|---------------------------------|--------------|----------------------------------|
+|productno                      |sellername |productname                      |customerprice |productmainimg                    |
+|-------------------------------|-----------|---------------------------------|--------------|----------------------------------|
+|FLOSTOOL-100100001             |플로바움       |인조가죽 보조스툴 2color                 |69000         |product/FLOS1.jpg                 |
+|CHANGLIVBOX-200200001          |창신리빙       |내츄럴 서랍형 리빙박스 투명수납함               |8910          |product/changlivbox1.jpg          |
+|GAZZSHOEWOOD-200300001         |가쯔         |원목 실내화걸이 신발정리대 & 슬리퍼 1+1 2colors |17010         |product/gazzshoewood1.jpg         |
+|ROOMNHOMETROL3-200100002       |룸앤홈        |패트릭3단 트롤리 3colors                |44910         |product/roomnhometrol31.jpg       |
+|FREEMADEDINNINGCH-100300002    |프리메이드      |프리메이드 식탁의자                       |50000         |product/freemade_diningch_1.jpg   |
+|MARKETBBEKJETROL-200100002     |마켓비        |BEKJE 원목트롤리 자작나무                 |92000         |product/marketbbekjetrol1.jpg     |
+|MARKETBMALGOSHOE-200300001     |마켓비        |MALGO 신발장/선반 600 2단              |15480         |product/marketbmalgoshoe1.jpg     |
+|MARKETBKONTINOLIVBOX-200200001 |마켓비        |KONTINO 폴딩박스 68L 2colors         |29070         |product/marketbkontinolivbox1.jpg |
+|HOUSEBUDYBIGLIVBOX-200200001   |하우스버디      |슬라이딩 박스 3P 대형                    |25110         |product/housebudybiglivbox1.jpg   |
+|DESTRASOFA-100100001           |레이디가구      |데스트라 천연면피 소가죽 소파 3인/4인용          |489000        |product/DESTRA1.jpg               |
+|SIMABLE-100100004              |상일리베가구     |마블대리석/진주석 소파테이블 11types          |177000        |product/SIMABLE1.jpg              |
+|PPOOAASS2-300100002            |필립스        |소프트팔 디즈니 미키마우스 무드등 취침등 USB       |19800         |product/PPOOAASS2.jpg             |
+|-------------------------------|-----------|---------------------------------|--------------|----------------------------------|
+
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned false
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.close() returned void
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@17852bd3
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getMoreResults() returned false
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getUpdateCount() returned -1
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.close() returned 
+2020-07-06 12:14:40.412  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.clearWarnings() returned 
+2020-07-06 12:14:40.505  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 12. Connection opened
+2020-07-06 12:14:40.505  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 12. Connection.new Connection returned 
+2020-07-06 12:14:40.506  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 12. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.506  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 12. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.509  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 13. Connection opened
+2020-07-06 12:14:40.510  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 13. Connection.new Connection returned 
+2020-07-06 12:14:40.510  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 13. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.510  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 13. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.514  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 14. Connection opened
+2020-07-06 12:14:40.514  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 14. Connection.new Connection returned 
+2020-07-06 12:14:40.514  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 14. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.514  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 14. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.517  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 15. Connection opened
+2020-07-06 12:14:40.517  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 15. Connection.new Connection returned 
+2020-07-06 12:14:40.517  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 15. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.517  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 15. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.523  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 16. Connection opened
+2020-07-06 12:14:40.523  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 16. Connection.new Connection returned 
+2020-07-06 12:14:40.523  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 16. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.523  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 16. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.528  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 17. Connection opened
+2020-07-06 12:14:40.529  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 17. Connection.new Connection returned 
+2020-07-06 12:14:40.529  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 17. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.529  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 17. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.532  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 18. Connection opened
+2020-07-06 12:14:40.532  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 18. Connection.new Connection returned 
+2020-07-06 12:14:40.532  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 18. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.532  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 18. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.535  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 19. Connection opened
+2020-07-06 12:14:40.536  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 19. Connection.new Connection returned 
+2020-07-06 12:14:40.536  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 19. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.536  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 19. Connection.getAutoCommit() returned true
+2020-07-06 12:14:40.540  INFO 12796 --- [HikariPool-2 connection adder] jdbc.connection                          : 20. Connection opened
+2020-07-06 12:14:40.540  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 20. Connection.new Connection returned 
+2020-07-06 12:14:40.540  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 20. Connection.isReadOnly() returned false
+2020-07-06 12:14:40.541  INFO 12796 --- [HikariPool-2 connection adder] jdbc.audit                               : 20. Connection.getAutoCommit() returned true
+2020-07-06 12:14:41.890  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.isValid(5) returned true
+2020-07-06 12:14:41.890  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getAutoCommit() returned true
+2020-07-06 12:14:41.891  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.new PreparedStatement returned 
+2020-07-06 12:14:41.891  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.prepareStatement(select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@c29fb93
+2020-07-06 12:14:41.891  INFO 12796 --- [http-nio-8080-exec-8] jdbc.sqlonly                             : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.sqltiming                           : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+ {executed in 0 msec}
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.execute() returned true
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.new ResultSet returned 
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@67202e72
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@2d46aba0 - Field level information: 
+	com.mysql.cj.result.Field@41ec572e[dbName=thehouse,tableName=product,originalTableName=product,columnName=productNo,originalColumnName=productNo,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@25ac9e3[dbName=thehouse,tableName=product,originalTableName=product,columnName=sellerName,originalColumnName=sellerName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@64ef2464[dbName=thehouse,tableName=product,originalTableName=product,columnName=productName,originalColumnName=productName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@7c6c88f2[dbName=thehouse,tableName=product,originalTableName=product,columnName=customerPrice,originalColumnName=customerPrice,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@5f1af576[dbName=thehouse,tableName=product,originalTableName=product,columnName=productMainImg,originalColumnName=productMainImg,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getType() returned 1003
+2020-07-06 12:14:41.892  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned FFBIKING-100100003
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 가구느낌
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 바이킹 플라스틱 체어 인테리어 식탁 의자
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 23900
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/FFBIKING1.jpg
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned HITLIL4Y-100400003
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 히트가구
+2020-07-06 12:14:41.893  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 릴리아 600 4단 광폭 서랍장
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 44500
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/1591149203_104810_13.jpg
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned LDMOODY-100100004
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 레이디가구
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 무디 양면 큐브테이블 2size
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 69900
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/LDMOODY1.jpg
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.894  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.896  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned CUSFABSOFA-100100001
+2020-07-06 12:14:41.897  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.897  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 플로바움
+2020-07-06 12:14:41.897  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.897  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 커스 패브릭풀커버 1/2/3인용소파 -2color
+2020-07-06 12:14:41.897  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 99000
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/CUSFAB1.jpg
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned MARKETBKONTINOLIVBOX-200200001
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 마켓비
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned KONTINO 폴딩박스 68L 2colors
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 29070
+2020-07-06 12:14:41.898  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/marketbkontinolivbox1.jpg
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned UUIIOOPP1-300100002
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 레이문
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 드림캐쳐 달 무드등
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.899  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 27900
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/UUIIOOPP1.jpg
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned SELESTAMAT-100200004
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 셀레스타
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 셀레스타 매트리스
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 50000
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/selesta_mat_1.jpg
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.900  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned LUCOSOFA-100100001
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 플로바움
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 루코 패브릭풀커버 3인용쇼파 2colors
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 172000
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/LUCO1.jpg
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned JJKKLLZZ2-300100001
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 스피아노
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 브리아나 플로어 장스탠드
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 84900
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/JJKKLLZZ2.jpg
+2020-07-06 12:14:41.901  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned GAZZMCRLIVBOX-200200001
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 가쯔
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 1+1 마카롱 리빙박스 수납정리함 72L 3colors
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.902  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 15660
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/gazzmcrlivbox1.jpg
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned LAUMWOODA-100300003
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned SR100
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 애쉬(물푸레나무) 서랍형 테이블
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 229000
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/1463022438865_YZRx2pOPS.jpg
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:41.904  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned SNAILDRAWERB-200100001
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 달팽이리빙
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 드마망 시스템 서랍장(B세트)
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 33500
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/159003626142575960.jpg
+2020-07-06 12:14:41.905  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultsettable                      : 
+|-------------------------------|-----------|-------------------------------|--------------|------------------------------------|
+|productno                      |sellername |productname                    |customerprice |productmainimg                      |
+|-------------------------------|-----------|-------------------------------|--------------|------------------------------------|
+|FFBIKING-100100003             |가구느낌       |바이킹 플라스틱 체어 인테리어 식탁 의자         |23900         |product/FFBIKING1.jpg               |
+|HITLIL4Y-100400003             |히트가구       |릴리아 600 4단 광폭 서랍장              |44500         |product/1591149203_104810_13.jpg    |
+|LDMOODY-100100004              |레이디가구      |무디 양면 큐브테이블 2size              |69900         |product/LDMOODY1.jpg                |
+|CUSFABSOFA-100100001           |플로바움       |커스 패브릭풀커버 1/2/3인용소파 -2color    |99000         |product/CUSFAB1.jpg                 |
+|MARKETBKONTINOLIVBOX-200200001 |마켓비        |KONTINO 폴딩박스 68L 2colors       |29070         |product/marketbkontinolivbox1.jpg   |
+|UUIIOOPP1-300100002            |레이문        |드림캐쳐 달 무드등                     |27900         |product/UUIIOOPP1.jpg               |
+|SELESTAMAT-100200004           |셀레스타       |셀레스타 매트리스                      |50000         |product/selesta_mat_1.jpg           |
+|LUCOSOFA-100100001             |플로바움       |루코 패브릭풀커버 3인용쇼파 2colors        |172000        |product/LUCO1.jpg                   |
+|JJKKLLZZ2-300100001            |스피아노       |브리아나 플로어 장스탠드                  |84900         |product/JJKKLLZZ2.jpg               |
+|GAZZMCRLIVBOX-200200001        |가쯔         |1+1 마카롱 리빙박스 수납정리함 72L 3colors |15660         |product/gazzmcrlivbox1.jpg          |
+|LAUMWOODA-100300003            |SR100      |애쉬(물푸레나무) 서랍형 테이블              |229000        |product/1463022438865_YZRx2pOPS.jpg |
+|SNAILDRAWERB-200100001         |달팽이리빙      |드마망 시스템 서랍장(B세트)               |33500         |product/159003626142575960.jpg      |
+|-------------------------------|-----------|-------------------------------|--------------|------------------------------------|
+
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.next() returned false
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.resultset                           : 11. ResultSet.close() returned void
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@52dbee1e
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getMoreResults() returned false
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.getUpdateCount() returned -1
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. PreparedStatement.close() returned 
+2020-07-06 12:14:41.906  INFO 12796 --- [http-nio-8080-exec-8] jdbc.audit                               : 11. Connection.clearWarnings() returned 
+2020-07-06 12:14:43.417  WARN 12796 --- [http-nio-8080-exec-1] c.b.h.security.CustomUserDetailsService  : Load User By UserName : ha123
+2020-07-06 12:14:43.419 ERROR 12796 --- [http-nio-8080-exec-1] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160) [spring-security-oauth2-client-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.bit.house.mapper.AllMemberMapper.read
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy115.read(Unknown Source) ~[na:na]
+	at com.bit.house.security.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:35) ~[main/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	... 51 common frames omitted
+
+2020-07-06 12:14:44.507  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. Connection.isValid(5) returned true
+2020-07-06 12:14:44.507  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. Connection.getAutoCommit() returned true
+2020-07-06 12:14:44.508  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.new PreparedStatement returned 
+2020-07-06 12:14:44.508  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. Connection.prepareStatement(select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2bf1cef2
+2020-07-06 12:14:44.508  INFO 12796 --- [http-nio-8080-exec-3] jdbc.sqlonly                             : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+
+2020-07-06 12:14:44.510  INFO 12796 --- [http-nio-8080-exec-3] jdbc.sqltiming                           : select productNo, sellerName, productName, customerPrice, productMainImg from thehouse.product order by rand() limit 12
+ {executed in 2 msec}
+2020-07-06 12:14:44.510  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.execute() returned true
+2020-07-06 12:14:44.510  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.new ResultSet returned 
+2020-07-06 12:14:44.510  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@2e1d49b4
+2020-07-06 12:14:44.510  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@697508a9 - Field level information: 
+	com.mysql.cj.result.Field@5395d2f3[dbName=thehouse,tableName=product,originalTableName=product,columnName=productNo,originalColumnName=productNo,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@76b6002d[dbName=thehouse,tableName=product,originalTableName=product,columnName=sellerName,originalColumnName=sellerName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@32a2a7a6[dbName=thehouse,tableName=product,originalTableName=product,columnName=productName,originalColumnName=productName,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+	com.mysql.cj.result.Field@7353c11b[dbName=thehouse,tableName=product,originalTableName=product,columnName=customerPrice,originalColumnName=customerPrice,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@eac87c8[dbName=thehouse,tableName=product,originalTableName=product,columnName=productMainImg,originalColumnName=productMainImg,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= BINARY, charsetIndex=83, charsetName=UTF-8]
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getType() returned 1003
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned LDSCANDI-100200001
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 레이디가구
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 스칸딕 로맨틱 신혼 퀸/슈퍼싱글 원목침대 3colors
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 189000
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/LDSCANDI1.jpg
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned DK028-100100001
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 듀커소파
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 4인용 카우치 풀커버 민트 패브릭 발수 소파(거위털)
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.511  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 797000
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/dk0281.jpg
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned ALLLIVINGCURVLIVBOX-200200001
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 올리빙
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 커브 디자인 리빙박스 1P
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 4410
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/alllivingcurvlivbox1.jpg
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned PMBB904SOFA-100100001
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 폴리몰리
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 빈백 904 소파 8colors
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 129000
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/pmbb904sofa.jpg
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned AASSDDFF2-300200001
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 오홀리브
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned [기간한정] 앙리마티스 명화 액자테이블 18종택1
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 16900
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.512  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/AASSDDFF2.jpg
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned QQWWEERR1-300100001
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 올루미
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 오로라 단스탠드
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 22000
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/QQWWEERR1.jpg
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned REVENSEVERS10-200200002
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 리벤스
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 밴티지 다용도 10단 정리함
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 9810
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/revensevers101.jpg
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned FFROMA-100100003
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 가구느낌
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 로마골드벨벳체어 2colors
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 40900
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/FFROMA1.jpg
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned SIPEANUT-100100004
+2020-07-06 12:14:44.513  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 상일리베가구
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 피넛 소파 테이블 2colors
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 29900
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/SIPEANUT.jpg
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned CHANGBLANG-200200002
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 창신리빙
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 블랑 서랍정리함
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 4320
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/changblang1.jpg
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned MARESOFA-100100001
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 레이디가구
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 마레 에쉬원목 3인용 소파
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 299000
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/MARE1.jpg
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned true
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productNo) returned SELESTACHEST-100200002
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(sellerName) returned 셀레스타
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productName) returned 셀레스타 서랍장
+2020-07-06 12:14:44.514  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.515  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getInt(customerPrice) returned 50000
+2020-07-06 12:14:44.515  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.515  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.getString(productMainImg) returned product/selesta_chest_1.jpg
+2020-07-06 12:14:44.515  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.wasNull() returned false
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultsettable                      : 
+|------------------------------|-----------|-------------------------------|--------------|---------------------------------|
+|productno                     |sellername |productname                    |customerprice |productmainimg                   |
+|------------------------------|-----------|-------------------------------|--------------|---------------------------------|
+|LDSCANDI-100200001            |레이디가구      |스칸딕 로맨틱 신혼 퀸/슈퍼싱글 원목침대 3colors |189000        |product/LDSCANDI1.jpg            |
+|DK028-100100001               |듀커소파       |4인용 카우치 풀커버 민트 패브릭 발수 소파(거위털)  |797000        |product/dk0281.jpg               |
+|ALLLIVINGCURVLIVBOX-200200001 |올리빙        |커브 디자인 리빙박스 1P                 |4410          |product/alllivingcurvlivbox1.jpg |
+|PMBB904SOFA-100100001         |폴리몰리       |빈백 904 소파 8colors              |129000        |product/pmbb904sofa.jpg          |
+|AASSDDFF2-300200001           |오홀리브       |[기간한정] 앙리마티스 명화 액자테이블 18종택1    |16900         |product/AASSDDFF2.jpg            |
+|QQWWEERR1-300100001           |올루미        |오로라 단스탠드                       |22000         |product/QQWWEERR1.jpg            |
+|REVENSEVERS10-200200002       |리벤스        |밴티지 다용도 10단 정리함                |9810          |product/revensevers101.jpg       |
+|FFROMA-100100003              |가구느낌       |로마골드벨벳체어 2colors               |40900         |product/FFROMA1.jpg              |
+|SIPEANUT-100100004            |상일리베가구     |피넛 소파 테이블 2colors              |29900         |product/SIPEANUT.jpg             |
+|CHANGBLANG-200200002          |창신리빙       |블랑 서랍정리함                       |4320          |product/changblang1.jpg          |
+|MARESOFA-100100001            |레이디가구      |마레 에쉬원목 3인용 소파                 |299000        |product/MARE1.jpg                |
+|SELESTACHEST-100200002        |셀레스타       |셀레스타 서랍장                       |50000         |product/selesta_chest_1.jpg      |
+|------------------------------|-----------|-------------------------------|--------------|---------------------------------|
+
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.next() returned false
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.resultset                           : 11. ResultSet.close() returned void
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@6f655862
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.getMoreResults() returned false
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.getUpdateCount() returned -1
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. PreparedStatement.close() returned 
+2020-07-06 12:14:44.516  INFO 12796 --- [http-nio-8080-exec-3] jdbc.audit                               : 11. Connection.clearWarnings() returned 
