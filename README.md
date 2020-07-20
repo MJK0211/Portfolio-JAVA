@@ -3,7 +3,7 @@
 # BitCamp Project
 
 ## Miniproject 1st - Shoppingmall Servlet Project
-> Machomanz 의류 쇼핑몰 
+> 'Machomanz' 의류 쇼핑몰 
 
 담당 기능 (로그인, 회원가입, 메인페이지)
 > 메인페이지 - 상품리스트 등록 /
@@ -15,7 +15,7 @@
 
 
 ## Miniproject 2nd - Reservation StudyCafe Spring Project
-> 스터디카페 좌석 예약 시스템
+> 'Pikka' 스터디카페 좌석 예약 시스템
 
 담당 기능 (Main UI, 좌석페이지, 좌석 결제, 좌석 현황)
 > 좌석 이용시간 내역 /
@@ -30,7 +30,7 @@
 
 
 ## Miniproject 3rd - Furniture Shoppingmall Spring Boot Project
-> 가구 쇼핑몰 프로젝트
+> '니가사는그집' 가구 쇼핑몰 프로젝트
 
 담당 기능 (스프링 시큐리티, Oauth2를 활용한 소셜로구인, 업체관리 페이지)
 > Spring Security를 활용한 로그인 회원가입 /
